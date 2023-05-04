@@ -13,7 +13,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatMenuModule } from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { BasketComponent } from './Content/basket/basket.component';
+import { ContactComponent } from './Content/contact/contact.component';
+import { OrderComponent } from './Content/order/order.component';
+import { FavoriteComponent } from './Content/favorite/favorite.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +27,11 @@ import { MatCardModule } from '@angular/material/card';
     HomeComponent,
     RegisterComponent,
     LoginComponent,
-    ProductsComponent
+    ProductsComponent,
+    BasketComponent,
+    ContactComponent,
+    OrderComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +39,8 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatButtonModule,
     MatFormFieldModule,
+    MatIconModule,
+    MatMenuModule,
     MatCardModule
   ],
   providers: [],
