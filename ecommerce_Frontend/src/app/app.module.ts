@@ -19,6 +19,9 @@ import { BasketComponent } from './Content/basket/basket.component';
 import { ContactComponent } from './Content/contact/contact.component';
 import { OrderComponent } from './Content/order/order.component';
 import { FavoriteComponent } from './Content/favorite/favorite.component'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { ForgetComponent } from './Content/forget/forget.component';
+import { ResetComponent } from './Content/reset/reset.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,9 @@ import { FavoriteComponent } from './Content/favorite/favorite.component';
     BasketComponent,
     ContactComponent,
     OrderComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    ForgetComponent,
+    ResetComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { FavoriteComponent } from './Content/favorite/favorite.component';
     MatFormFieldModule,
     MatIconModule,
     MatMenuModule,
+    ReactiveFormsModule,
     MatCardModule
   ],
   providers: [],

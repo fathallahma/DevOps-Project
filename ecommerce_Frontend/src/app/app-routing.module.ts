@@ -8,7 +8,8 @@ import {ContactComponent} from './Content/contact/contact.component';
 import {BasketComponent} from './Content/basket/basket.component';
 import {OrderComponent} from './Content/order/order.component';
 import {FavoriteComponent} from './Content/favorite/favorite.component';
-
+import {ForgetComponent} from './Content/forget/forget.component';
+import {ResetComponent} from './Content/reset/reset.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,16 @@ const routes: Routes = [
     component: LoginComponent
 },
 {
-  path: 'Register',
+  path: 'reset',
+  component: ResetComponent
+},
+
+{
+  path: 'forget',
+  component: ForgetComponent
+},
+{
+  path: 'register',
   component: RegisterComponent
 },
 {
